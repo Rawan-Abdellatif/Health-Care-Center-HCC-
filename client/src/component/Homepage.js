@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
+import Video from "./Video";
 const Homepge = () => {
   return (
     <>
       <Container>
-        <Img src="reception.jpg" />
+        <Video />{" "}
         <Head>
           <H2>
             HCC
@@ -103,7 +104,7 @@ const Head = styled.div`
 `;
 const H2 = styled.h2`
   font-size: 70px;
-  color: black;
+  color: white;
 `;
 const Container1 = styled.div`
   display: flex;
