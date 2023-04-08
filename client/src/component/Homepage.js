@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
-import Video from "./Video";
+import Videoplay from "./Videoplay";
 const Homepge = () => {
   return (
     <>
       <Container>
-        <Video />{" "}
+        <Videoplay />{" "}
         <Head>
           <H2>
             HCC
@@ -95,7 +95,7 @@ const Img = styled.img`
   height: 700px;
 `;
 const Head = styled.div`
-  color: #02093b;
+  color: #007f4e;
   position: absolute;
   top: 50%;
   left: 35%;
@@ -118,7 +118,7 @@ const Img1 = styled.img`
   margin-right: 20px;
   margin-top: 30px;
   display: block;
-  border: 2px solid #02093b;
+  border: 2px solid #007f4e;
   border-radius: 4px;
   &:hover {
     transform: scale(1.02);
@@ -148,11 +148,11 @@ const H3 = styled.h3`
   padding: 10px;
   margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #02093b;
+  background-color: #007f4e;
 `;
 const Text = styled.h3`
   text-align: center;
-  color: #02093b;
+  color: #007f4e;
   padding-top: 20px;
   font-size: 40px;
 `;
@@ -168,7 +168,7 @@ const H4 = styled.h4`
   padding: 10px;
   margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #3c99dc;
+  background-color: #007f4e;
 `;
 const Container2 = styled.div`
   display: flex;
