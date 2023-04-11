@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate, useParams } from "react-router-dom";
 import ConfirmationBook from "./ConfirmationBook";
 import { Link } from "react-router-dom";
-const AppointmentForm = () => {
+const AppointmentForm = ({ setAppointmentId }) => {
   const [doctors, setDoctors] = useState([]);
   const [selectedDoctorId, setSelectedDoctorId] = useState("");
   const [selectedDate, setSelectedDate] = useState(null);
@@ -134,6 +134,7 @@ const AppointmentForm = () => {
       })
         .then((response) => response.json())
         .then((data) => {
+          setAppointmentId(data.data._id);
           console.log("response data", data);
           if (data) {
             // Save success message to local storage

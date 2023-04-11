@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import profile from "../../src/profile.png";
-// import ConfirmationBook from "./ConfirmationBook";
-const PatientProfile = () => {
+
+const PatientProfile = ({ appointmentId }) => {
   const [patient, setPatient] = useState("");
   const [error, setError] = useState("");
   const { patientId } = useParams();
-  // const [appointmentData, setAppointmentData] = useState([]);
+  const [appointmentData, setAppointmentData] = useState(null);
   // const [appointmentId, setAppointmentId] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-
-  console.log("useParams", useParams());
+  // const { appointmentId } = useParams();
+  // console.log("appointmentId", appointmentId);
   useEffect(() => {
     fetch(`/api/patients/${patientId}`)
       .then((response) => response.json())
@@ -23,38 +23,38 @@ const PatientProfile = () => {
         console.error(error);
         setError("Failed to fetch patient's information");
       });
-    const message = localStorage.getItem("successMessage");
-    if (message) {
-      setSuccessMessage(message);
-    }
   }, [patientId]);
-  //fetch
-  // useEffect(() => {
-  //   fetch(`http://localhost:9999/api/appointment/${appointmentId}`)
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log("Appointment data:", data.data);
-  //       setAppointmentData(data.data);
-  //     })
+  // console.log("appointmentData", appointmentData);
+  useEffect(() => {
+    console.log(appointmentId, "appointmentId");
+    if (appointmentId) {
+      fetch(`http://localhost:9999/api/appointment/${appointmentId}`)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Appointment data in profile :", data.data);
+          setAppointmentData(data.data);
+        })
+        .catch((error) => {
+          console.error("Error fetching appointment data:", error);
+        });
+    }
+  }, [appointmentId]);
 
-  //     .catch((error) => {
-  //       console.error("Error fetching appointment data:", error);
-  //     });
-  // }, [appointmentId]);
   const handleBookAppointment = () => {
     window.location.href = `/patients/${patientId}/appointment`;
   };
+
   if (error) {
     return <div>{error}</div>;
   }
 
-  if (!patient) {
+  if (!patient && !appointmentData) {
     return <div>Loading...</div>;
   }
 
   return (
     <Profile>
-      <Heade> Patient Profile </Heade>
+      <Header>Patient Profile</Header>
       <Table>
         <tbody>
           <tr>
@@ -76,7 +76,6 @@ const PatientProfile = () => {
             <td>Address:</td>
             <td>{patient.address}</td>
           </tr>
-
           <tr>
             <td>Phone:</td>
             <td>{patient.phone}</td>
@@ -85,15 +84,21 @@ const PatientProfile = () => {
             <td>Email:</td>
             <td>{patient.email}</td>
           </tr>
-
           <tr>
             <td>Medical History</td>
             <td>{patient.medical_history}</td>
           </tr>
         </tbody>
-      </Table>{" "}
-      <p>{successMessage}</p>
-      <Button onClick={handleBookAppointment}>Book A ppointment </Button>
+      </Table>
+      {appointmentData && (
+        <ConfirmationBook>
+          <p>Appointment booked successfully!</p>
+          <p>Date: {appointmentData.date}</p>
+          <p>Date: {appointmentData.doctor_id}</p>
+          <p>Date: {appointmentData.hour}</p>
+        </ConfirmationBook>
+      )}
+      <Button onClick={handleBookAppointment}>Book Appointment</Button>
     </Profile>
   );
 };
@@ -103,7 +108,7 @@ const Profile = styled.div`
   margin-top: 200px;
   text-align: center;
 `;
-const Heade = styled.div`
+const Header = styled.div`
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -134,3 +139,4 @@ const Button = styled.button`
     cursor: pointer;
   }
 `;
+const ConfirmationBook = styled.div``;
