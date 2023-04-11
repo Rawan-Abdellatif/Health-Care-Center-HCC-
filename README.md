@@ -35,21 +35,14 @@ If you have any questions or concerns, please do not hesitate to contact us. Our
 Thank you for choosing our Health Care Center for your medical needs. We look forward to serving you and your family.
 ## HomePage
 <img src="screenpicture/1.png"/>
-## Our Services
 <img src="screenpicture/2.png"/>
- ## Admin Profile
 <img src="screenpicture/3.png"/>
-Confirmation Appointment
 <img src="screenpicture/4.png"/>
- Login Page
 <img src="screenpicture/5.png"/>
- Admin Details 
 <img src="screenpicture/6.png"/>
- Sign in 
 <img src="screenpicture/7.png"/>
-Patient Profile
 <img src="screenpicture/9.png"/>
- Signup page
+
 <img src="screenpicture/10.png"/>
 
 
