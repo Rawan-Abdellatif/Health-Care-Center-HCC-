@@ -33,23 +33,23 @@ Our Health Care Center is located in a convenient location with easy access from
 If you have any questions or concerns, please do not hesitate to contact us. Our friendly and knowledgeable staff is here to help you with anything you need.
 
 Thank you for choosing our Health Care Center for your medical needs. We look forward to serving you and your family.
-##  HomePage
+## HomePage
 <img src="screenpicture/1.png"/>
-###  Our Services
+### Our Services
 <img src="screenpicture/2.png"/>
- ##  Admin Profile
+ Admin Profile
 <img src="screenpicture/3.png"/>
-## Confirmation Appointment
+Confirmation Appointment
 <img src="screenpicture/4.png"/>
-## Login Page
+ Login Page
 <img src="screenpicture/5.png"/>
-## Admin Details 
+ Admin Details 
 <img src="screenpicture/6.png"/>
-##  Sign in 
+ Sign in 
 <img src="screenpicture/7.png"/>
-##  Patient Profile
+Patient Profile
 <img src="screenpicture/9.png"/>
-## Signup page
+ Signup page
 <img src="screenpicture/10.png"/>
 
 
