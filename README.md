@@ -33,4 +33,4 @@ Our Health Care Center is located in a convenient location with easy access from
 If you have any questions or concerns, please do not hesitate to contact us. Our friendly and knowledgeable staff is here to help you with anything you need.
 
 Thank you for choosing our Health Care Center for your medical needs. We look forward to serving you and your family.
-<img src="./1.png"/>
+<img src="./screenpicture/1.png"/>
