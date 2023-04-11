@@ -19,6 +19,9 @@ import AppointmentForm from "./component/AppointmentForm";
 import SignupForm from "./component/SingUpForm";
 import ConfirmationSignUp from "./component/ConfirmationSignUp";
 import ConfirmationBook from "./component/ConfirmationBook";
+import AdminSignin from "./component/AdminSigin";
+import AdminProfile from "./component/AdminProfile";
+
 const App = () => {
   return (
     <>
@@ -36,11 +39,17 @@ const App = () => {
           <Route path="/our-staff" element={<OurStaff />} />
           <Route path="/covid-19" element={<Covid />} />
           <Route path="/login/patientsignin" element={<PatientSignin />} />
+          <Route path="/login/adminsignin" element={<AdminSignin />} />
+
           <Route path="/login/doctorsignin" element={<DoctorSignin />} />
           <Route path="/login/doctorsignin/:doctorId" element={<DrProfile />} />
           <Route
             path="/login/patientsignin/:patientId"
             element={<PatientProfile />}
+          />
+          <Route
+            path="/login/adminsignin/:adminId"
+            element={<AdminProfile />}
           />
           <Route
             path="/patients/:patientId/appointment"
@@ -49,7 +58,7 @@ const App = () => {
           <Route path="/SignUp" element={<SignupForm />} />
           <Route path="/ConfirmationSignUp" element={<ConfirmationSignUp />} />
           <Route
-            path="/confirmationBook/:appointmentId"
+            path="/patients/:patientId/appointment/confirmationBook/:appointmentId"
             element={<ConfirmationBook />}
           />
         </Routes>
