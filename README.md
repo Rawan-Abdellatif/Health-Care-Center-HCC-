@@ -1,4 +1,4 @@
-## Health-Care-Center-HCC-
+# Health-Care-Center-HCC-
 The project is a clinic website that enables patients to book and manage their appointments for check-ups, vaccinations, and minor procedures. Moreover, the website will present information related to the clinic and provided services.
 Health Care Center
 Welcome to our Health Care Center! We are dedicated to providing the highest quality medical care to our patients in a comfortable and caring environment. We offer a range of medical services to help you maintain your health and well-being.
