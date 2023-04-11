@@ -1,0 +1,413 @@
+[
+    {
+      "username": "johndoe123",
+      "password": "00100A",
+      "name": "John Doe",
+      "age": 35,
+      "gender": "Male",
+      "address": "123 Main Street",
+      "phone": "555-555-1212",
+      "email": "johndoe@hotmail.com",
+      "medical_history": "High blood pressure"
+    },
+    {
+      "username": "Ahmad",
+      "password": "00100B",
+      "name": "Ahmad",
+      "age": 36,
+      "gender": "Male",
+      "address": "1530 de.penfield",
+      "phone": "555-555-444",
+      "email": "ahmad@hotmail.com",
+      "medical_history": "High blood pressure"
+    },
+    {
+      "username": "Omar",
+      "password": "00300C",
+      "name": "Omar",
+      "age": 20,
+      "gender": "Male",
+      "address": "sherbrook",
+      "phone": "555-555-333",
+      "email": "omar@hotmail.com",
+      "medical_history": "Nope"
+    },
+    {
+      "username": "Zein",
+      "password": "00400D",
+      "name": "Zein",
+      "age":20,
+      "gender": "Male",
+      "address": "Sanint Lourance",
+      "phone": "555-555-111",
+      "email": "zein@gmail.com",
+      "medical_history": "Nope"
+    },
+    {
+      "username": "Taim",
+      "password": "00400E",
+      "name": "Taim",
+      "age": 18,
+      "gender": "Male",
+      "address": "1530 de.penfield",
+      "phone": "555-555-666",
+      "email": "ahmad@gmail.com",
+      "medical_history": "Nope"
+    },
+    {
+      "username": "Ilyas",
+      "password": "00500F",
+      "name": "Ilyas",
+      "age": 25,
+      "gender": "Male",
+      "address": "1530 de.penfield",
+      "phone": "555-555-666",
+      "email": "ilyas@gmail.com",
+      "medical_history": "high cholesterol"
+    },
+    {
+      "username": "Lana",
+      "password": "00600G",
+      "name": "Lana",
+      "age": 52,
+      "gender": "Female",
+      "address": "Boulevard Saint-Charles",
+      "phone": "555-555-777",
+      "email": "lana@gmail.com",
+      "medical_history": "high cholesterol"
+    },
+    {
+      "username": "Hadeel123",
+      "password": "00700H",
+      "name": "Hadeel",
+      "age": 49,
+      "gender": "Female",
+      "address": "Boulevard Saint-Jean",
+      "phone": "555-555-888",
+      "email": "hadeel123@gmail.com",
+      "medical_history": "Asthma, seasonal allergies"
+    },
+    {
+      "username": "Liza",
+      "password": "00800I",
+    "age": 48,
+    "gender": "Femel",
+    "address": "Boulevard Des Sources",
+    "phone": "555-555-999",
+    "email": "liza@gmail.com",
+    "medical_history": "Type 2 diabetes, hypertension"
+},{
+    "username": "lubna",
+    "password": "00700H",
+    "name": "Lubna",
+    "age": 48,
+    "gender": "Femel",
+    "address": "Laurentian Boulevard",
+    "phone": "555-111-555",
+    "email": "lubna123@gmail.com",
+    "medical_history": "Asthma, seasonal allergies"
+},{
+    "username": "Sara ",
+    "password": "00700H",
+    "name": "Sara",
+    "age": 34,
+    "gender": "Femel",
+    "address": "Décarie Boulevard",
+    "phone": "555-222-888",
+    "email": "sara@gmail.com",
+    "medical_history": "Seizure Disorder"
+},{
+    "username": "Mohammad",
+    "password": "00700H",
+    "name": "Mohammad",
+    "age": 30,
+    "gender": "Male",
+    "address": "Greene Avenue",
+    "phone": "555-333-888",
+    "email": "mohammad@gmail.com",
+    "medical_history": "Seizure Disorder"
+},{
+    "username": "Kim ",
+    "password": "00700H",
+    "name": "Kim ",
+    "age": 69,
+    "gender": "Male",
+    "address": "Atwater Avenue",
+    "phone": "555-444-888",
+    "email": "kim@gmail.com",
+    "medical_history": "Osteoporosis"
+},{
+    "username": "Max ",
+    "password": "00700H",
+    "name": "Max",
+    "age": 77,
+    "gender": "Male",
+    "address": "Côte-des-Neiges Road",
+    "phone": "555-666-888",
+    "email": "max@gmail.com",
+    "medical_history": "Osteoporosis"
+},{
+    "username": "William ",
+    "password": "00700H",
+    "name": "William",
+    "age": 28,
+    "gender": "Male",
+    "address": "De L'Assomption Boulevard",
+    "phone": "555-777-888",
+    "email": "william@gmail.com",
+    "medical_history": "Thyroid Disease "
+
+},{
+    "username": "Rony ",
+    "password": "00700H",
+    "name": "Rony",
+    "age": 29,
+    "gender": "Male",
+    "address": "Crescent Street",
+    "phone": "555-888-888",
+    "email": "rony@gmail.com",
+    "medical_history": "Thyroid Disease "
+},{
+    "username": "Andrew ",
+    "password": "00700H",
+    "name": "Andrew",
+    "age": 28,
+    "gender": "Male",
+    "address": "Crescent Street",
+    "phone": "555-909-888",
+    "email": "andrew_re@gmail.com",
+    "medical_history": "Stroke "
+},{
+    "username": "Husam ",
+    "password": "00700H",
+    "name": "Husam",
+    "age": 27,
+    "gender": "Male",
+    "address": "McGill Street",
+    "phone": "555-123-888",
+    "email": "husam@gmail.com",
+    "medical_history": "Stroke "
+
+},{
+    "username": "Sami",
+    "password": "00700H",
+    "name": "Sami",
+    "age": 41,
+    "gender": "Male",
+    "address": "Boulevard Saint-Jean",
+    "phone": "555-555-123",
+    "email": "sami123@gmail.com",
+    "medical_history": "Diabetes"
+},{
+    "username": "furat ",
+    "password": "00700H",
+    "name": "Furat",
+    "age": 44,
+    "gender": "Femel",
+    "address": "McGill Street",
+    "phone": "555-555-234",
+    "email": "furat222@hotmail.com",
+    "medical_history": "Diabetes"
+},{
+    "username": "Philip ",
+    "password": "00700H",
+    "name": "Philip",
+    "age": 36,
+    "gender": "Male",
+    "address": "Boulevard Saint-Jean",
+    "phone": "555-555-345",
+    "email": "filip@hotmail.com",
+    "medical_history": "Genitourinary problems"
+},{
+    "username": "Mourad",
+    "password": "00700H",
+    "name": "Mourad",
+    "age": 37,
+    "gender": "Male",
+    "address": "Park Avenue",
+    "phone": "555-555-456",
+    "email": "mourad@hotmail.com",
+    "medical_history": "motor vehicle accidents"
+},{
+    "username": "Bisan ",
+    "password": "00700H",
+    "name": "Bisan",
+    "age": 37,
+    "gender": "Femel",
+    "address": "Park Avenue",
+    "phone": "555-555-567",
+    "email": "bisan@gmail.com",
+    "medical_history": "Asthma, seasonal allergies"
+},{
+    "username": "salwa ",
+    "password": "00700H",
+    "name": "Salwa",
+    "age": 41,
+    "gender": "Femel",
+    "address": "Saint Urbain Street",
+    "phone": "555-555-678",
+    "email": "salwa44@yahoo.com",
+    "medical_history": "Allergies"
+},{
+    "username": "dian ",
+    "password": "00700H",
+    "name": "Dina",
+    "age": 42,
+    "gender": "Femel",
+    "address": "Saint Catherine Street",
+    "phone": "555-555-789",
+    "email": "dina45@hotmail.com",
+    "medical_history": "motor vehicle accidents"
+},{
+    "username": "lama ",
+    "password": "00700H",
+    "name": "Lama",
+    "age": 48,
+    "gender": "Femel",
+    "address": "Robert-Bourassa Boulevard/University Street",
+    "phone": "555-123-999",
+    "email": "lama4gfr@hotmail.com",
+    "medical_history": "High blood pressure, high cholesterol"
+},{
+    "username": "Hiba",
+    "password": "00700H",
+    "name": "Hiba",
+    "age": 51,
+    "gender": "Femel",
+    "address": "Notre-Dame Street",
+    "phone": "555-445-987",
+    "email": "hiba34@gmail.com",
+    "medical_history": "Asthma, seasonal allergies"
+},{
+    "username": "sama ",
+    "password": "00700H",
+    "name": "Sama ",
+    "age": 66,
+    "gender": "Femel",
+    "address": "Saint Jacques Street",
+    "phone": "555-456-878",
+    "email": "samattt3@gmail.com",
+    "medical_history": "High blood pressure, high cholesterol"
+},{
+    "username": "Taima ",
+    "password": "00700H",
+    "name": "Taima",
+    "age": 52,
+    "gender": "Femel",
+    "address": "Saint Jacques Street",
+    "phone": "555-432-432",
+    "email": "taimaqq@yahoo.com",
+    "medical_history": "Migraines, lactose intolerance"
+},{
+    "username": "Mansour",
+    "password": "00700H",
+    "name": "Mansour",
+    "age":52,
+    "gender": "Male",
+    "address": "Papineau Avenue",
+    "phone": "555-098-098",
+    "email": "mansour66@hotmail.com",
+    "medical_history": "Allergies"
+},{
+    "username": "Nader ",
+    "password": "00700H",
+    "name": "Nader",
+    "age": 55,
+    "gender": "Male",
+    "address": "Saint-Michel Boulevard",
+    "phone": "555-444-111",
+    "email": "nadergr@yahoo.com",
+    "medical_history": "Migraines, lactose intolerance"
+},{
+    "username": "Gorge ",
+    "password": "00700H",
+    "name": "Gorge",
+    "age": 59,
+    "gender": "Male",
+    "address": "Saint-Michel Boulevard",
+    "phone": "555-543-776",
+    "email": "gorge-5@hotmail.com",
+    "medical_history": "Asthma, seasonal allergies"
+},{
+    "username": "Ahmad Sa",
+    "password": "00700H",
+    "name": "Ahmad Sa",
+    "age": 24,
+    "gender": "Male",
+    "address": "Ontario Street",
+    "phone": "555-566-876",
+    "email": "Ahmad-ds@gmail.com",
+    "medical_history": "None"
+},{
+    "username": "Ruba ",
+    "password": "00700H",
+    "name": "Ruba",
+    "age": 29,
+    "gender": "Femel",
+    "address": "Rue Saint-Paul",
+    "phone": "555-666-222",
+    "email": "ruba-dsf@yahoo.com",
+    "medical_history": "None"
+},{
+    "username": "liam",
+    "password": "00700H",
+    "name": "Liam",
+    "age": 38,
+    "gender": "Male",
+    "address": "Rue Saint-Paul",
+    "phone": "555-954-953",
+    "email": "laim_pp@hotmail.com",
+    "medical_history": "Depression, anxiety"
+},{
+    "username": "Smith ",
+    "password": "00700H",
+    "name": "Smith",
+    "age": 38,
+    "gender": "Male",
+    "address": "Berri Street",
+    "phone": "555-347-853",
+    "email": "smithf_TTr@hotmail.com",
+    "medical_history": "Arthritis, osteoporosis, hip replacement surgery"
+},{
+    "username": "Vivian",
+    "password": "00700H",
+    "name": "Vivian",
+    "age": 30,
+    "gender": "Femel",
+    "address": "Berri Street",
+    "phone": "555-344-111",
+    "email": "vivian@gmail.com",
+    "medical_history": "Depression, anxietys"
+},{
+    "username": "Saja",
+    "password": "00HHH",
+    "name": "Saja",
+    "age": 42,
+    "gender": "Femel",
+    "address": "Berri Street",
+    "phone": "555-530-111",
+    "email": "saja@gmail.com",
+    "medical_history": "Depression, anxietys"
+},{
+    "username": "Najm",
+    "password": "00HHH",
+    "name": "Najm",
+    "age": 35,
+    "gender": "Male",
+    "address": "Berri Street",
+    "phone": "555-222-111",
+    "email": "najm@gmail.com",
+    "medical_history": "Depression, anxietys"
+}
+,{
+    "username": "jawad",
+    "password": "00HHH",
+    "name": "Jawad",
+    "age": 29,
+    "gender": "Male",
+    "address": "Berri Street",
+    "phone": "555-444-111",
+    "email": "jawad_E@gmail.com",
+    "medical_history": "Depression, anxietys"
+}]
+

@@ -1,0 +1,9 @@
+ {
+    "appointment_id": "001",
+    "patient_id": "1001",
+    "doctor_id": "2001",
+    "date": "2023-04-15",
+    "hour": "14:30",
+    "reason_for_visit": "Annual check-up"
+    
+}

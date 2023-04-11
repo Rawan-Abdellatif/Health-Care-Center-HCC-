@@ -1,0 +1,1575 @@
+[
+      {
+        "name": "Dr. John Smith",
+        "specialty": "Cardiology",
+        "phone": "555-1234",
+        "email": "john.smith@cardiolog-rawan-clinic.com",
+        "username": "jsmith",
+        "password": "abc123", 
+        "schedule1": {
+          "start-date": "2023-05-01",
+          "end-date":"2023-05-05",
+          "availability": {
+            "Monday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Tuesday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Wednesday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Thursday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Friday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ]
+          }},
+          "schedule2": {
+            "start-date": "2023-05-08",
+            "end-date": "2023-05-12",
+
+            "availability": {
+              "Monday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Tuesday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Wednesday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Thursday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Friday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ]
+            }},"schedule3": {
+              "start-date": "2023-05-15",
+              "end-date": "2023-05-19",
+
+              "availability": {
+                "Monday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Tuesday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Wednesday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Thursday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Friday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ]
+              }},"schedule4": {
+                "start-date": "2023-05-22",
+                "end-date": "2023-05-26",
+  
+                "availability": {
+                  "Monday": [
+                    {
+                      "hour": "10:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "11:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "12:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "13:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "14:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "15:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "16:00",
+                      "available": true
+                    }
+                  ],
+                  "Tuesday": [
+                    {
+                      "hour": "10:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "11:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "12:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "13:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "14:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "15:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "16:00",
+                      "available": true
+                    }
+                  ],
+                  "Wednesday": [
+                    {
+                      "hour": "10:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "11:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "12:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "13:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "14:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "15:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "16:00",
+                      "available": true
+                    }
+                  ],
+                  "Thursday": [
+                    {
+                      "hour": "10:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "11:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "12:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "13:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "14:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "15:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "16:00",
+                      "available": true
+                    }
+                  ],
+                  "Friday": [
+                    {
+                      "hour": "10:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "11:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "12:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "13:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "14:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "15:00",
+                      "available": true
+                    },
+                    {
+                      "hour": "16:00",
+                      "available": true
+                    }
+                  ]
+                }},"schedule5": {
+                  "start-date": "2023-05-22",
+                  "end-date": "2023-06-02",
+    
+                  "availability": {
+                    "Monday": [
+                      {
+                        "hour": "10:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "11:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "12:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "13:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "14:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "15:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "16:00",
+                        "available": true
+                      }
+                    ],
+                    "Tuesday": [
+                      {
+                        "hour": "10:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "11:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "12:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "13:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "14:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "15:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "16:00",
+                        "available": true
+                      }
+                    ],
+                    "Wednesday": [
+                      {
+                        "hour": "10:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "11:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "12:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "13:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "14:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "15:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "16:00",
+                        "available": true
+                      }
+                    ],
+                    "Thursday": [
+                      {
+                        "hour": "10:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "11:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "12:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "13:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "14:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "15:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "16:00",
+                        "available": true
+                      }
+                    ],
+                    "Friday": [
+                      {
+                        "hour": "10:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "11:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "12:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "13:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "14:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "15:00",
+                        "available": true
+                      },
+                      {
+                        "hour": "16:00",
+                        "available": true
+                      }
+                    ]
+                  }}
+    
+      },
+      {
+        "name": "Dr. Sarah Lee",
+        "specialty": "Dermatology",
+        "phone": "555-5678",
+        "email": "sarah.lee@dermatology-rawan-clinic.com",
+        "username": "slee",
+        "password": "def456",
+        "schedule1": {
+          "start-date": "2023-05-01",
+          "end-date":"2023-05-05",
+          "availability": {
+            "Monday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Tuesday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Wednesday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Thursday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Friday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ]
+          }},
+          "schedule2": {
+            "start-date": "2023-05-08",
+            "end-date": "2023-05-12",
+
+            "availability": {
+              "Monday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Tuesday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Wednesday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Thursday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Friday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ]
+            }},
+        "schedule3": {
+          "start-date": "2023-05-15",
+          "end-date": "2023-05-19",
+
+          "availability": {
+            "Monday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Tuesday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Wednesday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Thursday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ],
+            "Friday": [
+              {
+                "hour": "10:00",
+                "available": true
+              },
+              {
+                "hour": "11:00",
+                "available": true
+              },
+              {
+                "hour": "12:00",
+                "available": true
+              },
+              {
+                "hour": "13:00",
+                "available": true
+              },
+              {
+                "hour": "14:00",
+                "available": true
+              },
+              {
+                "hour": "15:00",
+                "available": true
+              },
+              {
+                "hour": "16:00",
+                "available": true
+              }
+            ]
+          }},"schedule4": {
+            "start-date": "2023-05-22",
+            "end-date": "2023-05-26",
+
+            "availability": {
+              "Monday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Tuesday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Wednesday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Thursday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ],
+              "Friday": [
+                {
+                  "hour": "10:00",
+                  "available": true
+                },
+                {
+                  "hour": "11:00",
+                  "available": true
+                },
+                {
+                  "hour": "12:00",
+                  "available": true
+                },
+                {
+                  "hour": "13:00",
+                  "available": true
+                },
+                {
+                  "hour": "14:00",
+                  "available": true
+                },
+                {
+                  "hour": "15:00",
+                  "available": true
+                },
+                {
+                  "hour": "16:00",
+                  "available": true
+                }
+              ]
+            }},"schedule5": {
+              "start-date": "2023-05-22",
+              "end-date": "2023-06-02",
+
+              "availability": {
+                "Monday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Tuesday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Wednesday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Thursday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ],
+                "Friday": [
+                  {
+                    "hour": "10:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "11:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "12:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "13:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "14:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "15:00",
+                    "available": true
+                  },
+                  {
+                    "hour": "16:00",
+                    "available": true
+                  }
+                ]
+              }}
+    
+      }
+     
+      
+    ]
