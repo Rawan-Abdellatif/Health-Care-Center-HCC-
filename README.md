@@ -45,11 +45,11 @@ Thank you for choosing our Health Care Center for your medical needs. We look fo
 <img src="screenpicture/5.png"/>
 ### Admin Details 
 <img src="screenpicture/6.png"/>
-### Sign in 
+###  Sign in 
 <img src="screenpicture/7.png"/>
-### Patient Profile
+###  Patient Profile
 <img src="screenpicture/9.png"/>
-### Signup page
+###  Signup page
 <img src="screenpicture/10.png"/>
 
 
