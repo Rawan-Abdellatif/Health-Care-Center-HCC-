@@ -28,15 +28,15 @@ const HeaderWrapper = styled.div`
   height: 70px;
   z-index: 2;
   padding: 10px;
-  border-bottom: 1px solid #02093b;
-  background-color: #02093b;
+  border-bottom: 1px solid #007f4e;
+  background-color: #007f4e;
 `;
 const Img = styled.img`
   width: 100px;
   /* height: 80px; */
   padding-top: 2px;
   border-radius: 350px;
-  border: 2px solid #02093b;
+  border: 2px solid #007f4e;
   &:hover {
     background-color: none;
   }
@@ -53,7 +53,7 @@ const Div = styled.nav`
       color: white;
     }
     &:hover {
-      color: #02093b;
+      color: #007f4e;
       background-color: white;
       border-radius: 5px;
       font-size: 29px;
