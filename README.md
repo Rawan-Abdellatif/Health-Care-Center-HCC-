@@ -39,7 +39,6 @@ Thank you for choosing our Health Care Center for your medical needs. We look fo
 <img src="screenpicture/4.png"/>
 <img src="screenpicture/5.png"/>
 <img src="screenpicture/6.png"/>
-<!-- <img src="screenpicture/7.png"/> -->
 <img src="screenpicture/9.png"/>
 
 <img src="screenpicture/10.png"/>
