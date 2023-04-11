@@ -1,7 +1,7 @@
 const patients = require("./data/patients.json");
 const doctors = require("./data/doctors.json");
 const appointment = require("./data/appointment.json");
-
+const admins = require("./data/admin.json");
 const { MongoClient } = require("mongodb");
 const { v4: uuidv4 } = require("uuid");
 require("dotenv").config();
@@ -113,7 +113,41 @@ const addAppointment = async (req, res) => {
   await client.close();
   console.log("Disconnected from MongoDB!");
 };
+
+//Add Admin
+const addAdmin = async (req, res) => {
+  try {
+    // connect to the client
+    await client.connect();
+
+    // connect to the database
+    const db = client.db("HCC");
+    console.log("Connected to MongoDB!");
+
+    // generate a unique ID for the Admins and add it to the document
+    const AdminsWithId = admins.map((admin) => ({
+      ...admin,
+      _id: uuidv4(),
+    }));
+
+    // insert the Admins into the 'appointment' collection
+    const result = await db.collection("Admins").insertMany(AdminsWithId);
+
+    // On success, send a response
+    console.log(`Successfully added ${result}the Admins to MongoDB`);
+  } catch (err) {
+    // on failure/error, send an error response
+    console.log("Error:", err);
+    //res.status(500).json({ status: 500, data: req.body, message: err.message });
+  }
+
+  // close the connection to the database server
+  await client.close();
+  console.log("Disconnected from MongoDB!");
+};
+addAdmin();
 // addPatients();
-addDoctors();
+// addDoctors();
 // addAppointment();
 // module.exports = { addPatients, addDoctors, addAppointment };
+// module.exports = { addAdmin };
