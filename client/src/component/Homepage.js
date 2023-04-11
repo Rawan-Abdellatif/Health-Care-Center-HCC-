@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import Videoplay from "./Videoplay";
+import Statistics from "./Statistics";
 const Homepge = () => {
   return (
     <>
@@ -51,33 +52,37 @@ const Homepge = () => {
           </Link>
         </Div4>
       </Container1>
+
+      <Statistics endValues={[100, 25, 10, 5]} />
+
       <Text>NEWS</Text>
       <Container2>
         <Div6>
-          <Img1 src="Harmony-Day.jpg" />
+          <Img1 src="acidreflux.png" />
           <h3>
-            Harmony Week 2023 This week at Health Care Center(HCC) we are
-            celebrating Harmony Week - a time when, across Canada, we recognise
-            and celebrate our diversity as a nation. Harmony Week is about
-            inclusiveness, respect and se of belonging for everyone.
+            Acid reflux Gastro-esophageal reflux happens when acid from the
+            stomach splashes upinto the tube that carries food from the throat
+            to the stomach (esophagus).
           </h3>
         </Div6>
         <Div6>
-          <Img1 src="Harmony-Day.jpg" />
+          <Img1 src="kidshealth.jpg" />
           <h3>
-            Harmony Week 2023 This week at Health Care Center(HCC) we are
-            celebrating Harmony Week - a time when, across Canada, we recognise
-            and celebrate our diversity as a nation. Harmony Week is about
-            inclusiveness, respect and se of belonging for everyone.
+            Private nursing care at Bloom Medical If you are looking for
+            specialized care for your child, we recently launched HCC, a private
+            care nursing service. Did you know clinical nurses and nurse
+            practitioners are fully qualified to care for your child's health? ‍
+            The program is designed to monitor the health and development of
+            babies (0-24 months), toddlers (2 to 5 years), and children (6 to 18
+            years) while providing support to parents.
           </h3>
         </Div6>
         <Div6>
-          <Img1 src="Harmony-Day.jpg" />
+          <Img1 src="milk.jpg" />
           <h3>
-            Harmony Week 2023 This week at Health Care Center(HCC) we are
-            celebrating Harmony Week - a time when, across Canada, we recognise
-            and celebrate our diversity as a nation. Harmony Week is about
-            inclusiveness, respect and se of belonging for everyone.
+            Cow’s milk protein intolerance Information from the Montreal
+            Children's Hospital about dietary restrictions related to cow's
+            milk, soy protein and bovine protein.
           </h3>
         </Div6>
       </Container2>
