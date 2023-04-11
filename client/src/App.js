@@ -21,8 +21,10 @@ import ConfirmationSignUp from "./component/ConfirmationSignUp";
 import ConfirmationBook from "./component/ConfirmationBook";
 import AdminSignin from "./component/AdminSigin";
 import AdminProfile from "./component/AdminProfile";
+import { useState } from "react";
 
 const App = () => {
+  const [AppointmentId, setAppointmentId] = useState(null);
   return (
     <>
       <BrowserRouter>
@@ -45,7 +47,7 @@ const App = () => {
           <Route path="/login/doctorsignin/:doctorId" element={<DrProfile />} />
           <Route
             path="/login/patientsignin/:patientId"
-            element={<PatientProfile />}
+            element={<PatientProfile appointmentId={AppointmentId} />}
           />
           <Route
             path="/login/adminsignin/:adminId"
@@ -53,7 +55,7 @@ const App = () => {
           />
           <Route
             path="/patients/:patientId/appointment"
-            element={<AppointmentForm />}
+            element={<AppointmentForm setAppointmentId={setAppointmentId} />}
           />
           <Route path="/SignUp" element={<SignupForm />} />
           <Route path="/ConfirmationSignUp" element={<ConfirmationSignUp />} />
