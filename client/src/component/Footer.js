@@ -5,34 +5,32 @@ import { AiFillFacebook } from "react-icons/ai";
 import { ImInstagram } from "react-icons/im";
 const Footer = () => {
   return (
-    <>
-      <Container>
-        <Div>
-          <div>HCC Health Care Center</div>
-          <div>
-            <HiLocationMarker />
-            3222-Cote des Neige
-          </div>
-          <div>
-            <FaPhoneAlt /> (438)111 333
-          </div>
-        </Div>
-        <Div>
-          <div>Foundation</div>
-          <div>Donate</div>
-          <div>Friends of HCC</div>
-        </Div>
-        <Div>
-          <div>Contact</div>
-          <div>
-            <AiFillFacebook />
-          </div>
-          <div>
-            <ImInstagram />
-          </div>
-        </Div>
-      </Container>
-    </>
+    <Container>
+      <Div>
+        <div>HCC Health Care Center</div>
+        <div>
+          <HiLocationMarker />
+          3222-Cote des Neige
+        </div>
+        <div>
+          <FaPhoneAlt /> (438)111 333
+        </div>
+      </Div>
+      <Div>
+        <div>Foundation</div>
+        <div>Donate</div>
+        <div>Friends of HCC</div>
+      </Div>
+      <Div>
+        <div>Contact</div>
+        <div>
+          <AiFillFacebook />
+        </div>
+        <div>
+          <ImInstagram />
+        </div>
+      </Div>
+    </Container>
   );
 };
 export default Footer;
@@ -41,7 +39,7 @@ const Container = styled.div`
   flex-direction: row;
   /* margin-left: 250px; */
   font-size: 20px;
-  background-color: #c7522a;
+  background-color: #007f4e;
   width: 100%;
 `;
 const Div = styled.div`
