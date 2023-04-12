@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Statistics = ({ endValues }) => {
-  const [currentValues, setCurrentValues] = useState([0, 0, 0, 0]);
+  const [currentValues, setCurrentValues] = useState([30, 5, 2, 1]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,20 +48,21 @@ const Statistics = ({ endValues }) => {
 export default Statistics;
 const StatisticsSection = styled.section`
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 150px;
+  padding-left: 30px;
   // styles for statistics section
 `;
 
 const StatisticsContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 
   // other styles as needed
 `;
 
 const StatisticItem = styled.div`
   text-align: center;
-  padding-left: 110px;
+  padding-left: 130px;
   // other styles as needed
 `;
 
