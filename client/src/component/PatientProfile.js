@@ -7,13 +7,13 @@ const PatientProfile = ({ appointmentId }) => {
   const [patient, setPatient] = useState("");
   const [error, setError] = useState("");
   const { patientId } = useParams();
-  const [appointmentData, setAppointmentData] = useState(null);
+  const [appointmentData, setAppointmentData] = useState({});
   const [showAppointment, setShowAppointment] = useState(false);
 
-  // const [appointmentId, setAppointmentId] = useState("");
+  //  const [appointmentId, setAppointmentId] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-  // const { appointmentId } = useParams();
-  // console.log("appointmentId", appointmentId);
+  //  const { appointmentId } = useParams();
+  console.log("appointmentId", appointmentId);
   useEffect(() => {
     fetch(`/api/patients/${patientId}`)
       .then((response) => response.json())
@@ -95,11 +95,11 @@ const PatientProfile = ({ appointmentId }) => {
           </tr>
         </tbody>
       </Table>
-      {appointmentData && (
+      {appointmentData.date && (
         <ConfirmationBook>
           <P>Appointment booked successfully! </P>
           <Button2 onClick={handleToggleAppointment}>
-            {showAppointment ? "Hide" : "Show"} Appointment Details
+            {showAppointment ? "Hide" : "Show"} Details
           </Button2>
           {showAppointment && (
             <>
@@ -109,6 +109,7 @@ const PatientProfile = ({ appointmentId }) => {
           )}
         </ConfirmationBook>
       )}
+
       <Button onClick={handleBookAppointment}>Book Appointment</Button>
     </Profile>
   );
@@ -143,7 +144,7 @@ const Button = styled.button`
   cursor: pointer;
   text-align: center;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 210px;
   margin-bottom: 100px;
 
@@ -158,18 +159,19 @@ const ConfirmationBook = styled.div`
 `;
 const P = styled.p`
   font-weight: bold;
+  margin-left: 70px;
 `;
+//
 const Button2 = styled.button`
   border: 2px solid #007f4e;
   width: 150px;
   height: 40px;
-  font-size: 12px;
+  font-size: 15px;
   cursor: pointer;
   text-align: center;
   padding: 5px;
-  /* margin-top: 40px; */
-  margin-left: 40px;
-  /* margin-bottom: 100px; */
+  margin-top: 40px;
+  margin-left: 50px;
 
   color: #007f4e;
   &:hover {
@@ -177,4 +179,3 @@ const Button2 = styled.button`
     color: white;
   }
 `;
-//

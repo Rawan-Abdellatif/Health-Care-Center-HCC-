@@ -25,7 +25,7 @@ import { useState } from "react";
 import DoctorForm from "./component/DoctorForm";
 import ConfirmationSignUpdoctor from "./component/ConfirmationSignUpdoctor";
 const App = () => {
-  const [AppointmentId, setAppointmentId] = useState(null);
+  const [AppointmentId, setAppointmentId] = useState("");
   const [adminId, setAdminId] = useState("");
   return (
     <>
