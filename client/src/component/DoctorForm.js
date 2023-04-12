@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ConfirmationSignUpdoctor from "./ConfirmationSignUpdoctor";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
-const DoctorForm = () => {
+const DoctorForm = ({ setAdminId }) => {
+  const { adminId } = useParams();
+  console.log("adminId in DoctorForm", adminId);
+  setAdminId(adminId);
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -58,6 +61,7 @@ const DoctorForm = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log("data in signUp", data);
+
         if (
           data.message ===
           "Username and password combination already used. Please choose a different username and/or password."

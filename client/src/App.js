@@ -26,7 +26,7 @@ import DoctorForm from "./component/DoctorForm";
 import ConfirmationSignUpdoctor from "./component/ConfirmationSignUpdoctor";
 const App = () => {
   const [AppointmentId, setAppointmentId] = useState(null);
-
+  const [adminId, setAdminId] = useState("");
   return (
     <>
       <BrowserRouter>
@@ -53,7 +53,7 @@ const App = () => {
           />
           <Route
             path="/login/adminsignin/:adminId"
-            element={<AdminProfile />}
+            element={<AdminProfile setAdminId={setAdminId} />}
           />
           <Route
             path="/patients/:patientId/appointment"
@@ -62,12 +62,12 @@ const App = () => {
           <Route path="/SignUp" element={<SignupForm />} />
           <Route
             path="/login/adminsignin/:adminId/SignUpdoctor"
-            element={<DoctorForm />}
+            element={<DoctorForm setAdminId={setAdminId} />}
           />
           <Route path="/ConfirmationSignUp" element={<ConfirmationSignUp />} />
           <Route
             path="/ConfirmationSignUpdoctor"
-            element={<ConfirmationSignUpdoctor />}
+            element={<ConfirmationSignUpdoctor adminId={adminId} />}
           />
 
           <Route

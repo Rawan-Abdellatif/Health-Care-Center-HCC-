@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import adminprofile from "../../src/adminprofile.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-const AdminProfile = () => {
+const AdminProfile = ({ setAdminId }) => {
   const [admin, setAdmin] = useState("");
   const [error, setError] = useState("");
   const [patients, setPatients] = useState([]);
@@ -12,7 +12,8 @@ const AdminProfile = () => {
   const [showDoctorInfo, setShowDoctorInfo] = useState(false);
 
   const { adminId } = useParams();
-
+  setAdminId(adminId);
+  console.log("");
   useEffect(() => {
     fetch(`/api/admins/${adminId}`)
       .then((response) => response.json())

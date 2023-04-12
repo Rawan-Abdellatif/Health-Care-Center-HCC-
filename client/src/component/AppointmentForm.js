@@ -134,7 +134,7 @@ const AppointmentForm = ({ setAppointmentId }) => {
       })
         .then((response) => response.json())
         .then((data) => {
-          setAppointmentId(data.data._id);
+          // setAppointmentId(data.data._id);
           console.log("response data", data);
           if (data) {
             // Save success message to local storage
