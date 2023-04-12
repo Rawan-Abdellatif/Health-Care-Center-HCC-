@@ -112,10 +112,10 @@ const AppointmentForm = ({ setAppointmentId }) => {
   const handleBook = (event) => {
     event.preventDefault();
 
-    if (selectedTime && name && username && phone && email) {
+    if (selectedTime && name && phone && email) {
       const body = {
         name,
-        username,
+
         phone,
         email,
         patient_id: patientId,
@@ -138,10 +138,7 @@ const AppointmentForm = ({ setAppointmentId }) => {
           console.log("response data", data);
           if (data) {
             // Save success message to local storage
-            const successMessage =
-              "your Appointment" +
-              `Date: ${selectedDate}` +
-              `Time: ${selectedTime}`;
+            const successMessage = ` ${selectedDate}`;
 
             localStorage.setItem("successMessage", successMessage);
             // Redirect to confirmation page
@@ -234,16 +231,6 @@ const AppointmentForm = ({ setAppointmentId }) => {
         )}
         {selectedTime && (
           <Div>
-            <First>
-              <Label>
-                User Name
-                <Input
-                  type="text"
-                  name="username"
-                  onChange={handleUsernameChange}
-                />
-              </Label>
-            </First>
             <Label>
               Name
               <Input type="text" name="name" onChange={handleNameChange} />

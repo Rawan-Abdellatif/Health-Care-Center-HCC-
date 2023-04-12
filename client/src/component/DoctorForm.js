@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ConfirmationSignUp from "./ConfirmationSignUp";
+import ConfirmationSignUpdoctor from "./ConfirmationSignUpdoctor";
 import { useNavigate } from "react-router-dom";
 
-const SignupForm = () => {
+const DoctorForm = () => {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
     name: "",
-    age: "",
-    gender: "",
-    address: "",
     phone: "",
     email: "",
-    medical_history: "",
+    specialty: "",
   });
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
@@ -43,12 +40,20 @@ const SignupForm = () => {
       return;
     }
 
-    fetch("/api/patient", {
+    fetch("/api/doctor", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: formData.username }),
+      body: JSON.stringify({
+        username: formData.username,
+
+        name: formData.name,
+        password: formData.password,
+        phone: formData.phone,
+        email: formData.email,
+        specialty: formData.specialty,
+      }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -72,21 +77,20 @@ const SignupForm = () => {
 
   const handleSignUp = () => {
     if (successMessage !== "") {
-      navigate("/confirmationSignUp", {
+      navigate("/confirmationSignUpdoctor", {
         state: {
           name: formData.name,
-          age: formData.age,
-          gender: formData.gender,
-          address: formData.address,
           phone: formData.phone,
           email: formData.email,
-          medical_history: formData.medical_history,
+          specialty: formData.specialty,
         },
       });
     }
   };
   if (successMessage !== "") {
-    return <ConfirmationSignUp formData={formData} message={successMessage} />;
+    return (
+      <ConfirmationSignUpdoctor formData={formData} message={successMessage} />
+    );
   }
   return (
     <Form onSubmit={handleSubmit}>
@@ -126,42 +130,7 @@ const SignupForm = () => {
             required
           />
         </Div>
-        <Div>
-          <Label>Age</Label>
-          <Input
-            type="number"
-            className="form-control"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-            required
-          />
-        </Div>
-        <Div>
-          <Label>Gender</Label>
-          <Select
-            name="gender"
-            value={formData.gender}
-            onChange={handleChange}
-            required
-          >
-            <Option value="">Select gender</Option>
-            <Option value="male">Male</Option>
-            <Option value="female">Female</Option>
-          </Select>
-        </Div>
 
-        <Div>
-          <Label>Address</Label>
-          <Input
-            type="text"
-            className="form-control"
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            required
-          />
-        </Div>
         <Div>
           <Label>Phone</Label>
           <Input
@@ -185,11 +154,15 @@ const SignupForm = () => {
           />
         </Div>
         <Div>
-          <Label>Medical History</Label>
-          <Textarea
-            name="medical_history"
-            value={formData.medical_history}
+          <Label>specialty</Label>
+
+          <Input
+            type="specialty"
+            name="specialty"
+            className="form-control"
+            value={formData.specialty}
             onChange={handleChange}
+            required
           />
         </Div>
         <Button type="submit" onClick={handleSignUp}>
@@ -200,7 +173,7 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default DoctorForm;
 const Form = styled.form`
   text-align: center;
   margin-top: 150px;

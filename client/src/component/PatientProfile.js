@@ -8,6 +8,8 @@ const PatientProfile = ({ appointmentId }) => {
   const [error, setError] = useState("");
   const { patientId } = useParams();
   const [appointmentData, setAppointmentData] = useState(null);
+  const [showAppointment, setShowAppointment] = useState(false);
+
   // const [appointmentId, setAppointmentId] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   // const { appointmentId } = useParams();
@@ -51,6 +53,9 @@ const PatientProfile = ({ appointmentId }) => {
   if (!patient && !appointmentData) {
     return <div>Loading...</div>;
   }
+  const handleToggleAppointment = () => {
+    setShowAppointment(!showAppointment);
+  };
 
   return (
     <Profile>
@@ -92,10 +97,16 @@ const PatientProfile = ({ appointmentId }) => {
       </Table>
       {appointmentData && (
         <ConfirmationBook>
-          <p>Appointment booked successfully!</p>
-          <p>Date: {appointmentData.date}</p>
-          <p>Date: {appointmentData.doctor_id}</p>
-          <p>Date: {appointmentData.hour}</p>
+          <P>Appointment booked successfully! </P>
+          <Button2 onClick={handleToggleAppointment}>
+            {showAppointment ? "Hide" : "Show"} Appointment Details
+          </Button2>
+          {showAppointment && (
+            <>
+              <p>Date:{appointmentData.date}</p>
+              <p>Time: {appointmentData.hour}</p>
+            </>
+          )}
         </ConfirmationBook>
       )}
       <Button onClick={handleBookAppointment}>Book Appointment</Button>
@@ -125,19 +136,45 @@ const Table = styled.table`
   }
 `;
 const Button = styled.button`
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-bottom: 50px;
-  border: 2px solid #02093b;
-  height: 70px;
-  background-color: white;
-  color: #02093b;
-  border-radius: 5px;
+  border: 2px solid #007f4e;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 210px;
+  margin-bottom: 100px;
+
+  color: #007f4e;
   &:hover {
+    background-color: #007f4e;
     color: white;
-    background-color: #02093b;
-    cursor: pointer;
   }
 `;
-const ConfirmationBook = styled.div``;
+const ConfirmationBook = styled.div`
+  margin-left: 170px;
+`;
+const P = styled.p`
+  font-weight: bold;
+`;
+const Button2 = styled.button`
+  border: 2px solid #007f4e;
+  width: 150px;
+  height: 40px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  /* margin-top: 40px; */
+  margin-left: 40px;
+  /* margin-bottom: 100px; */
+
+  color: #007f4e;
+  &:hover {
+    background-color: #007f4e;
+    color: white;
+  }
+`;
 //

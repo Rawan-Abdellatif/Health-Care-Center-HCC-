@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import adminprofile from "../../src/adminprofile.jpg";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const AdminProfile = () => {
   const [admin, setAdmin] = useState("");
   const [error, setError] = useState("");
@@ -74,6 +74,7 @@ const AdminProfile = () => {
         setError("Failed to delete patient");
       });
   };
+
   return (
     <>
       {error && <div>{error}</div>}
@@ -102,8 +103,8 @@ const AdminProfile = () => {
           </Table>
           <Button onClick={togglePatientInfo}>Patient Info</Button>
           {showPatientInfo && (
-            <Table>
-              <tbody>
+            <Table2>
+              <tbody style={{ borderCollapse: "collapse" }}>
                 <tr>
                   <th>Name</th>
                   <th>Phone</th>
@@ -112,31 +113,40 @@ const AdminProfile = () => {
                   <th>Address</th>
                   <th>Medical History</th>
                 </tr>
-                {patients.map((patient) => (
-                  <tr key={patient._id}>
-                    <td>{patient.name}</td>
-                    <td>{patient.phone}</td>
-                    <td>{patient.email}</td>
-                    <td>{patient.age}</td>
-                    <td>{patient.address}</td>
-                    <td>{patient.medical_history}</td>
-                    <td>
-                      <Button onClick={() => handleDeletePatient(patient._id)}>
-                        Delete
-                      </Button>
-                    </td>
-                  </tr>
-                ))}
+                {patients
+                  .sort((a, b) => {
+                    const nameA = a.name?.toUpperCase() || "";
+                    const nameB = b.name?.toUpperCase() || "";
+                    return nameA.localeCompare(nameB);
+                  })
+                  .map((patient) => (
+                    <tr key={patient._id}>
+                      <td>{patient.name}</td>
+                      <td>{patient.phone}</td>
+                      <td>{patient.email}</td>
+                      <td>{patient.age}</td>
+                      <td>{patient.address}</td>
+                      <td>{patient.medical_history}</td>
+                      <td>
+                        <Button
+                          onClick={() => handleDeletePatient(patient._id)}
+                        >
+                          Delete
+                        </Button>
+                      </td>
+                    </tr>
+                  ))}
               </tbody>
-            </Table>
+            </Table2>
           )}
+
           <Button onClick={toggleDoctorInfo}>Doctors Info</Button>
           {showDoctorInfo && (
-            <Table>
+            <Table2>
               <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Specialty</th>
+                  {/* <th>Specialty</th> */}
                   <th>Phone</th>
                   <th>Email</th>
                 </tr>
@@ -145,14 +155,19 @@ const AdminProfile = () => {
                 {doctors.map((doctor) => (
                   <tr key={doctor._id}>
                     <td>{doctor.name}</td>
-                    <td>{doctor.specialty}</td>
+                    {/* <td>{doctor.specialty}</td> */}
                     <td>{doctor.phone}</td>
                     <td>{doctor.email}</td>
                   </tr>
                 ))}
               </tbody>
-            </Table>
+            </Table2>
           )}
+          <SignUpDoctorButton>
+            <Link to={`/login/adminsignin/${adminId}/SignUpdoctor`}>
+              Sign up a Doctor
+            </Link>
+          </SignUpDoctorButton>
         </Profile>
       )}
     </>
@@ -175,11 +190,21 @@ const Img = styled.img`
   width: 200px;
   height: 200px;
 `;
-const Table = styled.table`
+const Table2 = styled.table`
   text-align: left;
   margin: 0 auto;
-  td {
+  /* td {
     padding: 5;
+  } */
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
 `;
 const Button = styled.button`
@@ -190,6 +215,29 @@ const Button = styled.button`
   cursor: pointer;
   text-align: center;
   padding: 5px;
+
+  color: #007f4e;
+  &:hover {
+    background-color: #007f4e;
+    color: white;
+  }
+`;
+const Table = styled.table`
+  text-align: left;
+  margin: 0 auto;
+`;
+
+const SignUpDoctorButton = styled.button`
+  border: 2px solid #007f4e;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  /* margin-left: 1000px; */
+  margin-top: 20px;
+  margin-bottom: 100px;
 
   color: #007f4e;
   &:hover {

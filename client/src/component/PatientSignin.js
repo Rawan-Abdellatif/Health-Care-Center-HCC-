@@ -25,7 +25,7 @@ function PatientSignin() {
       navigate(`/login/patientsignin/${data.data.patientId}`);
     } else {
       // If sign-in fails, display an error message
-      alert("username or password are not cortect ");
+      alert("username or password are not correct");
     }
   };
 

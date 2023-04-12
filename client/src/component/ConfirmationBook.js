@@ -28,27 +28,19 @@ function ConfirmationBook({ message }) {
 
   return (
     <>
-      {" "}
-      <Container>
-        <div>
-          {appointmentData && (
-            <div>
-              <p>Appointment booked successfully!</p>
-              <p>doctorId: {appointmentData.doctor_id}</p>
-              <p>patientId :{appointmentData.patient_id}</p>
-              <p>{successMessage}</p>
-              <Link to={`/login/patientsignin/${appointmentData.patient_id}`}>
-                <Button>Return to your Profile</Button>
-              </Link>
-              {/* <p>Date :{appointmentData.date}</p>
+      {appointmentData && (
+        <Container>
+          <p>Appointment booked successfully! On {successMessage}</p>
+          <p>doctorId: {appointmentData.doctor_id}</p>
+          <p>patientId :{appointmentData.patient_id}</p>
+          {/* <p>{successMessage}</p> */}
+          <Link to={`/login/patientsignin/${appointmentData.patient_id}`}>
+            <Button>Return to your Profile</Button>
+          </Link>
+          {/* <p>Date :{appointmentData.date}</p>
               <p>Hour: {appointmentData.hour}</p> */}
-            </div>
-          )}
-          {/* <Link to={`/login/patientsignin/${appointmentData.patient_id}`}>
-            <Button>Return to Patient Profile</Button>
-          </Link> */}
-        </div>
-      </Container>
+        </Container>
+      )}
     </>
   );
 }
@@ -56,7 +48,7 @@ function ConfirmationBook({ message }) {
 export default ConfirmationBook;
 
 const Container = styled.div`
-  margin-left: 300px;
+  margin-left: 470px;
   margin-top: 200px;
   margin-bottom: 100px;
 `;
@@ -71,7 +63,7 @@ const Button = styled.button`
   height: 40px;
   font-size: 18px;
   cursor: pointer;
-  margin-left: 120px;
+  margin-left: 40px;
   padding: 5px;
   color: #007f4e;
   &:hover {

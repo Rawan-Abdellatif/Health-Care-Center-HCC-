@@ -13,10 +13,9 @@ const addAppointment = async (req, res) => {
   const appointment = req.body;
   console.log("req.body", req.body);
   console.log("doctorId", doctorId);
-  const client = new MongoClient(MONGO_URI, options);
 
   try {
-    await client.connect();
+    const client = await MongoClient.connect(MONGO_URI, options);
     const db = client.db("HCC");
 
     // Generate a unique ID for the appointment
@@ -27,7 +26,7 @@ const addAppointment = async (req, res) => {
     appointment.doctorId = doctorId;
 
     // Insert the appointment into the database
-    const result = await db.collection("appointments").insertOne(appointment);
+    const result = await db.collection("appointment").insertOne(appointment);
 
     res.status(201).json({
       message: "Appointment added successfully",
@@ -36,8 +35,6 @@ const addAppointment = async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Error adding appointment" });
-  } finally {
-    client.close();
   }
 };
 

@@ -7,7 +7,12 @@ const DrProfile = () => {
   const [doctor, setDoctor] = useState("");
   const [error, setError] = useState("");
   const [appointments, setAppointments] = useState([]);
+  const [showTable, setShowTable] = useState(false);
 
+  const toggleTable = () => setShowTable(!showTable);
+  const sortedAppointments = appointments.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
   const { doctorId } = useParams();
   useEffect(() => {
     fetch(`/api/doctors/${doctorId}`)
@@ -67,26 +72,33 @@ const DrProfile = () => {
             </tr>
           </tbody>
         </Table>
-        My Schedule
+
         <AppointmentsTable>
-          <thead>
-            <tr>
-              <th> Date </th>
-              <th> Time </th>
-              <th> Patient Id </th>
-              {/* <th> Patient Email </th> */}
-            </tr>
-          </thead>
-          <tbody>
-            {appointments.map((appointment) => (
-              <tr key={appointment.id}>
-                <td>{appointment.date}</td>
-                <td>{appointment.hour}</td>
-                <td>{appointment.patient_id}</td>
-                {/* <td>{appointment.patientEmail}</td> */}
-              </tr>
-            ))}
-          </tbody>
+          <div>
+            <Button onClick={toggleTable}>
+              {showTable ? "Hide Appointments" : "Show Appointments"}
+            </Button>
+            {showTable && (
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Patient ID</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sortedAppointments.map((appointment) => (
+                    <tr key={appointment.id} data={appointment}>
+                      <td>{appointment.date}</td>
+                      <td>{appointment.hour}</td>
+                      <td>{appointment.patient_id}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </div>
         </AppointmentsTable>
       </Profile>
     </>
@@ -120,12 +132,34 @@ const Table = styled.table`
 `;
 const AppointmentsTable = styled.table`
   margin-left: 600px;
-  font-weight: bold;
+
   Table {
     margin-top: 10px;
   }
-  td {
-    margin-top: 10px;
-    padding: 10px;
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+`;
+const Button = styled.button`
+  border: 2px solid #007f4e;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin-left: 20px;
+
+  color: #007f4e;
+  &:hover {
+    background-color: #007f4e;
+    color: white;
   }
 `;

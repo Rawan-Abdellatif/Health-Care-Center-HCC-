@@ -7,11 +7,10 @@ const Contact = () => {
         <Main>Our offices </Main>
         <Div>
           {" "}
-          1530 Avenu Dr.penfield, Montreal ,(Quebec),H3G 1C1telephone: 438
-          833568
+          1213 Saint Mark, Montreal ,(Quebec),H3G 1C1telephone: 438-821 568
         </Div>
         <Div>
-          Get in touch with the HCC team!Please refrain from sharing any
+          Get in touch with the HCC team! Please refrain from sharing any
           personal, medical information with our administrative staff. Details
           from your personal conditions are not necessary for administrative
           purposes and should only be shared through the proper channels with

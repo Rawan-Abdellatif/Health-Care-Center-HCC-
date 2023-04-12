@@ -9,7 +9,7 @@ const options = {
 };
 
 const getAppointmentsByDoctor = async (req, res) => {
-  const doctorId = req.params.doctorId;
+  const doctor_id = req.params.doctor_id;
   const client = new MongoClient(MONGO_URI, options);
 
   try {
@@ -18,8 +18,8 @@ const getAppointmentsByDoctor = async (req, res) => {
 
     // Find all appointments for the specified doctor
     const appointments = await db
-      .collection("appointments")
-      .find({ doctorId })
+      .collection("appointment")
+      .find({ doctorId: doctor_id })
       .toArray();
 
     res.status(200).json({ data: appointments });

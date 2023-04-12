@@ -5,10 +5,6 @@ import admin from "../../src/admin.jpg";
 const Login = () => {
   return (
     <>
-      <Text> LOGIN</Text>
-      <Link to="/SignUp">
-        <SignUP>SignUp</SignUP>
-      </Link>
       <Container>
         <Div>
           <Link to="/login/patientsignin">
@@ -30,19 +26,22 @@ const Login = () => {
           </Link>
         </Div>
       </Container>
+      <Link to="/SignUp">
+        <SignUP>SignUp</SignUP>
+      </Link>
     </>
   );
 };
 export default Login;
-const Text = styled.h3`
-  text-align: center;
-  padding-top: 100px;
-  font-size: 25px;
-`;
+// const Text = styled.h3`
+//   text-align: center;
+//   padding-top: 100px;
+//   font-size: 25px;
+// `;
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 250px;
+  padding-left: 150px;
   position: relative;
 `;
 const Img = styled.img`
@@ -62,7 +61,8 @@ const Container = styled.div`
   flex-direction: row;
   padding-top: 50px;
   text-align: center;
-  padding-bottom: 300px;
+  margin-top: 100px;
+  /* padding-bottom: 300px; */
 `;
 const H3 = styled.h3`
   position: absolute;
@@ -83,9 +83,10 @@ const SignUP = styled.div`
   width: 100px;
   height: 40px;
   font-size: 25px;
-  margin-left: 1200px;
+  margin-left: 650px;
+  margin-top: 50px;
   text-align: center;
-  padding: 5px;
+  margin-bottom: 300px;
   color: #007f4e;
   &:hover {
     background-color: #007f4e;

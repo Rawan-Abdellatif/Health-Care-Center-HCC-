@@ -24,6 +24,7 @@ const { getAdmin } = require("./getAdmin");
 const { adminsignin } = require("./adminsignin");
 const { addAppointment } = require("./addAppointment");
 const { getAppointmentsByDoctor } = require("./getAppointmentsByDoctor");
+const { postDoctor } = require("./postDoctor");
 // const { patientSignout } = require("./patientSignout");
 // Below are methods that are included in express(). We chain them for convenience.
 //
@@ -79,7 +80,7 @@ app
   .post("/api/doctors/:doctorId/appointments", addAppointment)
   //get appointment by specific doctor
   .get("/api/doctors/:doctorId/appointments", getAppointmentsByDoctor)
-
+  .post("/api/doctor", postDoctor)
   // add new endpoints here ☝️
   // ---------------------------------
   //
