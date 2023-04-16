@@ -39,7 +39,7 @@ const Container = styled.div`
   flex-direction: row;
   /* margin-left: 250px; */
   font-size: 20px;
-  background-color: #007f4e;
+  background-color: #1e3d58;
   width: 100%;
 `;
 const Div = styled.div`

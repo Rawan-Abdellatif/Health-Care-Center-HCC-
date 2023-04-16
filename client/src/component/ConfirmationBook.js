@@ -58,16 +58,16 @@ const Test = styled.div`
   width: 120px;
 `;
 const Button = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 190px;
   height: 40px;
   font-size: 18px;
   cursor: pointer;
   margin-left: 40px;
   padding: 5px;
-  color: #007f4e;
+  color: #1e3d58;
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;

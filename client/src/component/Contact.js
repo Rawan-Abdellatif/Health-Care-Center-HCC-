@@ -23,7 +23,7 @@ const Contact = () => {
 };
 export default Contact;
 const Conatiner = styled.div`
-  color: #007f4e;
+  color: #1e3d58;
   text-align: center;
   margin-top: 150px;
   margin-bottom: 100px;

@@ -23,7 +23,7 @@ import AdminSignin from "./component/AdminSigin";
 import AdminProfile from "./component/AdminProfile";
 import { useState } from "react";
 import DoctorForm from "./component/DoctorForm";
-import ConfirmationSignUpdoctor from "./component/ConfirmationSignUpdoctor";
+import Confirmationdoctor from "./component/Confirmationdoctor";
 const App = () => {
   const [AppointmentId, setAppointmentId] = useState("");
   const [adminId, setAdminId] = useState("");
@@ -66,8 +66,8 @@ const App = () => {
           />
           <Route path="/ConfirmationSignUp" element={<ConfirmationSignUp />} />
           <Route
-            path="/ConfirmationSignUpdoctor"
-            element={<ConfirmationSignUpdoctor adminId={adminId} />}
+            path="/Confirmationdoctor"
+            element={<Confirmationdoctor adminId={adminId} />}
           />
 
           <Route

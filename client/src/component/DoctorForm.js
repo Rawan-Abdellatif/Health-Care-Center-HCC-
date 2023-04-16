@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ConfirmationSignUpdoctor from "./ConfirmationSignUpdoctor";
+import ConfirmationSignUpdoctor from "./Confirmationdoctor";
 import { useNavigate, useParams } from "react-router-dom";
 
 const DoctorForm = ({ setAdminId }) => {
@@ -193,7 +193,7 @@ const Div = styled.div`
 const Input = styled.input`
   height: 20px;
   width: 50%;
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   margin-top: 5px;
 `;
 
@@ -211,12 +211,12 @@ const Label = styled.label`
 const Textarea = styled.textarea`
   height: 80px;
   width: 185px;
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   margin-left: 3px;
   resize: none;
 `;
 const Button = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 150px;
   height: 40px;
   font-size: 18px;
@@ -224,9 +224,9 @@ const Button = styled.button`
   text-align: center;
   padding: 5px;
 
-  color: #007f4e;
+  color: #1e3d58;
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;
@@ -234,7 +234,7 @@ const SuccessMessage = styled.h3``;
 const Select = styled.select`
   height: 30px;
   width: 200px;
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   margin-top: 5px;
 `;
 const Option = styled.option``;

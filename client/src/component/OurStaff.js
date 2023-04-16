@@ -18,7 +18,7 @@ const OurStaff = () => {
 };
 export default OurStaff;
 const Div = styled.div`
-  color: #007f4e;
+  color: #1e3d58;
   padding-left: 20px;
   margin-right: 50px;
   font-size: 20px;

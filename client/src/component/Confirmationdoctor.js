@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link, useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-const ConfirmationSignUpdoctor = ({ formData }) => {
+const Confirmationdoctor = ({ formData }) => {
   const [error, setError] = useState("");
   const { adminId } = useParams();
   // const [admin, setAdmin] = useState("");
@@ -35,7 +35,7 @@ const ConfirmationSignUpdoctor = ({ formData }) => {
   );
 };
 
-export default ConfirmationSignUpdoctor;
+export default Confirmationdoctor;
 
 const Container = styled.div`
   margin-top: 200px;
@@ -45,23 +45,23 @@ const Container = styled.div`
   border: 2px solid #fafafa;
   margin-left: 450px;
   margin-bottom: 100px;
-  color: #007f4e;
+  color: #1e3d58;
 `;
 
 const Text = styled.h3``;
 
 const Button = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 150px;
   height: 40px;
   font-size: 15px;
   cursor: pointer;
   text-align: center;
   padding: 5px;
-  color: #007f4e;
+  color: #1e3d58;
 
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;

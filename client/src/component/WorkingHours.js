@@ -17,7 +17,7 @@ const WorkingHours = () => {
 };
 export default WorkingHours;
 const Container = styled.div`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 250px;
   text-align: center;
   margin-left: 560px;
@@ -30,10 +30,10 @@ const Main = styled.div`
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-  color: #007f4e;
+  color: #1e3d58;
 `;
 const Div = styled.div`
   font-size: 20px;
   text-align: center;
-  color: #007f4e;
+  color: #1e3d58;
 `;

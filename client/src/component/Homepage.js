@@ -123,7 +123,7 @@ const Img1 = styled.img`
   margin-right: 20px;
   margin-top: 30px;
   display: block;
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   border-radius: 4px;
   &:hover {
     transform: scale(1.02);
@@ -153,11 +153,11 @@ const H3 = styled.h3`
   padding: 10px;
   margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #007f4e;
+  background-color: #1e3d58;
 `;
 const Text = styled.h3`
   text-align: center;
-  color: #007f4e;
+  color: #1e3d58;
   padding-top: 20px;
   font-size: 40px;
 `;
@@ -173,7 +173,7 @@ const H4 = styled.h4`
   padding: 10px;
   margin-bottom: 0px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #007f4e;
+  background-color: #1e3d58;
 `;
 const Container2 = styled.div`
   display: flex;

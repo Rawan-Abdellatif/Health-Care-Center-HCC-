@@ -137,7 +137,7 @@ const Table = styled.table`
   }
 `;
 const Button = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 150px;
   height: 40px;
   font-size: 15px;
@@ -148,9 +148,9 @@ const Button = styled.button`
   margin-left: 210px;
   margin-bottom: 100px;
 
-  color: #007f4e;
+  color: #1e3d58;
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;
@@ -163,7 +163,7 @@ const P = styled.p`
 `;
 //
 const Button2 = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 150px;
   height: 40px;
   font-size: 15px;
@@ -173,9 +173,9 @@ const Button2 = styled.button`
   margin-top: 40px;
   margin-left: 50px;
 
-  color: #007f4e;
+  color: #1e3d58;
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;

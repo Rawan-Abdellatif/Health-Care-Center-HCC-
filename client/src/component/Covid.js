@@ -25,7 +25,7 @@ const Covid = () => {
 export default Covid;
 const Main = styled.div`
   margin-top: 150px;
-  color: #007f4e;
+  color: #1e3d58;
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;

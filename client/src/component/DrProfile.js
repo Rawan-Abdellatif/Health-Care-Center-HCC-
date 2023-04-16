@@ -11,7 +11,7 @@ const DrProfile = () => {
 
   const toggleTable = () => setShowTable(!showTable);
   const sortedAppointments = appointments.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
+    (a, b) => new Date(a.date) - new Date(b.date)
   );
   const { doctorId } = useParams();
   useEffect(() => {
@@ -148,7 +148,7 @@ const AppointmentsTable = styled.table`
   }
 `;
 const Button = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 150px;
   height: 40px;
   font-size: 15px;
@@ -157,9 +157,9 @@ const Button = styled.button`
   padding: 5px;
   margin-left: 20px;
 
-  color: #007f4e;
+  color: #1e3d58;
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;

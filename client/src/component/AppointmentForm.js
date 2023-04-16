@@ -307,16 +307,16 @@ const Option = styled.option`
   cursor: pointer;
 `;
 const Button = styled.button`
-  border: 2px solid #007f4e;
+  border: 2px solid #1e3d58;
   width: 150px;
   height: 40px;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
   padding: 5px;
-  color: #007f4e;
+  color: #1e3d58;
   &:hover {
-    background-color: #007f4e;
+    background-color: #1e3d58;
     color: white;
   }
 `;

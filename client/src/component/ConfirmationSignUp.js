@@ -24,6 +24,6 @@ const Container = styled.div`
   border: 2px solid #fafafa;
   margin-left: 450px;
   margin-bottom: 100px;
-  color: #007f4e;
+  color: #1e3d58;
 `;
 const Text = styled.h3``;
